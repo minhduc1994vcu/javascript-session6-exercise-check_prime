@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function check_prime(number) {
+        let check = true;
+        for (let i = 2; i < Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                check = false;
+            }
+        }
+        return check;
+    }
+</script>
 </body>
 </html>
