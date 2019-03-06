@@ -15,6 +15,14 @@
         }
         return check;
     }
+    let number_less = parseInt(prompt(" enter a number "));
+    let array = [];
+    for (let j = 2; j < number_less; j++) {
+        if (check_prime(j)) {
+            array.push(j)
+        }
+    }
+    document.write("prime numbers less than " + number_less + " is : " + array)
 </script>
 </body>
 </html>
